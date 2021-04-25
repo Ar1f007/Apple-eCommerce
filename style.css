@@ -331,3 +331,104 @@ html {
 }
 /* End of Slideshow */
 /* End of Section 1 */
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 120vh;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-2-heading {
+  font-size: 10rem;
+  font-weight: 200;
+  color: var(--black-color);
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.section-2-heading::before {
+  content: "";
+  width: 130%;
+  height: 30vw;
+  background: linear-gradient(var) (--primary-color), var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-50deg);
+  transform-origin: left top;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.iPhones {
+  height: 60vh;
+  width: 50vw;
+  background: linear-gradient(var(--primary-color), var(--white-color));
+  border-radius: 0.5rem;
+}
+
+.iPhones img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  position: absolute;
+  transition: opacity 0.5s;
+}
+
+.iPhone-img-2 {
+  opacity: 0;
+}
+
+.iPhones:hover .iPhone-img-1 {
+  opacity: 0;
+}
+
+.iPhones:hover .iPhone-img-2 {
+  opacity: 1;
+}
+
+.iPhone-btns {
+  display: flex;
+}
+
+.iPhone-btn {
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(to right, rgb(51, 51, 51) 60%, rgb(82, 82, 82));
+  margin: 0 3rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.iPhone-btn::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  display: block;
+  border: 0.1rem solid #6edae6;
+  border-radius: 1rem;
+}
+
+.iPhone-btn span {
+  position: absolute;
+  top: -3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
+  width: max-content;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.iPhone-btn:hover span {
+  transform: scale(1);
+}
+
+/* End of Section 2 */
