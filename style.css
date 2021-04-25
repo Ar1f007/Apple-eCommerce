@@ -355,7 +355,7 @@ html {
   content: "";
   width: 130%;
   height: 30vw;
-  background: linear-gradient(var) (--primary-color), var(--white-color);
+  background: linear-gradient(var(--primary-color), var(--white-color));
   position: absolute;
   top: 0;
   left: 0;
